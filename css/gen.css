@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    border: none;
+    outline: none;
     box-sizing: border-box;
 }
 body {
@@ -11,39 +13,26 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.collapse {
-    padding-left: 20px;
-    display: flex;
+.header-adit-logo {
+    margin-right: 15px;
 }
-
-.header1 {
-    display: flex;
-    background-color: red;
-}
-
-.nav-item {
-    background-color: #000;
-    color: #000;
-}
-
-.nav-link {
-    color: white !important;
-}
-
 .nav-link:hover {
-    color: red;
+    color: #ff0000 !important;
 }
-
-.bg-custom-090a0f {
-    background-color: black;
+.footer {
+    margin-top: 40px;
+    color: #fff;
+    text-align: center !important;
 }
-
-.logo {
-    border-radius: 50%;
-    background-color: #1b2735;
+.footer .fabIcons a {
+    color: inherit;
 }
-
-.icons {
-    display: flex;
+.footer .fabIcons i {
+    font-size: 30px;
+    padding: 10px;
+    margin: 2px;
+}
+.footer p {
+    font-size: 15px;
+    text-align: center;
 }

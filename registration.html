@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>INSPIRO 4.0</title>
+        <!-- CSS Linking -->
+        <link rel="icon" href="./img/favico.webp" type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/gen.css" />
+        <link rel="stylesheet" href="./css/star.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="favico.png" type="image/x-icon">
-  <title>INSPIRO 4.0</title>
-  <link rel="stylesheet" href="Registration.css" />
-  <!-- CSS only -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="./css/gen.css">
-  <link rel="stylesheet" href="./css/star.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-custom-090a0f">
-    <div><img src="./img/IEEE ADIT SB.png" alt="yog-image" height="80" width="80"></div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="header1">
-      <div class="collapse navbar-collapse bg-custom-090a0f">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="speakers.html">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Registrations</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="registration.html">Previous Inspiros</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="bg-container">
-    <div id="stars"></div>
-    <div id="stars2"></div>
-    <div id="stars3"></div>
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLSfXqYjjhAgZcWehhIK-kLmYHnaMs5ZC5HRe0EZLArid7IyYng/viewform?embedded=true"
-      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-  </div>
-
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
-
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-custom-090a0f">
+            <!-- Brand -->
+            <img
+                src="./img/IEEE ADIT SB.png"
+                alt="yog-image"
+                height="80"
+                width="80"
+                class="header-adit-logo"
+            />
+            <!-- Toggler/collapsibe Button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsibleNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mx-10">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="speakers.html"
+                            >Speakers</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="registration.html"
+                            >Registrations</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="registration.html"
+                            >Schedule</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="registration.html"
+                            >Previous Inspiros</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSe3XwNJj16qAdHS4YQ9y3Jn3A2Wj3_uTDp4NcoyQ9yc2QGvoA/viewform"
+                width="100%"
+                height="600"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                >Loading…</iframe
+            >
+        </div>
+        <footer class="footer">
+            <div class="fabIcons">
+                <a href="https://www.facebook.com/IEEE.org/"
+                    ><i class="fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/adit.sb.ieee/"
+                    ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a
+                    href="https://twitter.com/aditsbieee?t=r-yQkA-uGFP_xBJW7PxUMQ&s=08"
+                    ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/adit-sb-ieee"
+                    ><i class="fa-brands fa-linkedin"></i
+                ></a>
+            </div>
+            <p>All Rights Reserved</p>
+        </footer>
+    </body>
 </html>
