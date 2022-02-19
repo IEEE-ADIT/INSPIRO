@@ -34,6 +34,6 @@ img:hover {
 }
 @media only screen and (max-width: 600px) {
     img:hover {
-        transform: scale(2.5);
+        transform: scale(5);
     }
 }
