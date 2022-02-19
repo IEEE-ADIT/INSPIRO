@@ -58,24 +58,27 @@ p.datetime-string #red {
 }
 @media only screen and (max-width: 600px) {
     .section1 .InspiroLogo {
-        width: 80%;
+        margin-top: 40px;
+        width: 100%;
     }
     .section1 p.datetime-string {
         font-size: 20px;
+        margin-bottom: 40px;
     }
 }
 @media only screen and (max-width: 600px) {
     .section1 .InspiroLogo {
-        width: 80%;
+        margin-top: 40px;
+        width: 100%;
     }
     .section1 p.datetime-string {
         font-size: 25px;
+        margin-bottom: 40px;
     }
 }
 @media only screen and (min-width: 600px) {
     .section1 .InspiroLogo {
         width: 50%;
-        height: 50%;
     }
     .section1 p.datetime-string {
         font-size: 30px;
