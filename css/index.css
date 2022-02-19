@@ -1,0 +1,205 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+}
+
+.bg-container {
+  /* width: 100vw; */
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 37px;
+}
+
+.bg-container img {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  height: 400px;
+}
+.content {
+  color: #fff;
+}
+.content p.heading {
+  text-align: center;
+  font-size: 40px;
+}
+.content p.content {
+  font-size: 18px;
+}
+h1 {
+  font-size: 50px;
+  position: relative;
+  margin: 0 auto;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: max-content;
+  overflow: visible;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  width: 0.125em;
+  background: black;
+  animation: blink 750ms steps(24) infinite;
+}
+
+h1 span:first-of-type {
+  color: #02aae5;
+}
+
+h1 span:last-of-type {
+  color: #f72315;
+}
+
+h3 {
+  font-family: "Source Code Pro", monospace;
+  margin: auto;
+  margin-top: 70px;
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center;
+  opacity: 0;
+  transition: 1s ease-in-out;
+}
+
+.footer {
+  background-color: #000;
+}
+
+/* From cssbuttons.io by @namecho */
+button,
+button::after {
+  padding: 16px 20px;
+  font-size: 18px;
+  border: 0;
+  color: #fff;
+  letter-spacing: 3px;
+  line-height: 1;
+  box-shadow: 6px 0px 0px #00e6f6;
+  outline: transparent;
+  position: relative;
+}
+
+button::after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  content: "HOVER ME";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+  clip-path: var(--slice-0);
+}
+
+button::after {
+  animation: 2.5s glitch infinite;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+
+  5% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+
+  10% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+
+  15% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+
+  20% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+
+  25% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+
+  30% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+
+  35% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+
+  40% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+
+  45% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+
+  50% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+.butt {
+  text-align: center;
+}
+
+.butt button {
+  margin: 5px 20px;
+}
+
+.butt button#blue {
+  background: linear-gradient(45deg, transparent 5%, #02aae5 5%);
+}
+.butt button#blue::after {
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+}
+.butt button#red {
+  background: linear-gradient(45deg, transparent 5%, #f72315 5%);
+}
+.butt button#red::after {
+  background: linear-gradient(
+    45deg,
+    transparent 3%,
+    #00e6f6 3%,
+    #00e6f6 5%,
+    #ff013c 5%
+  );
+}
