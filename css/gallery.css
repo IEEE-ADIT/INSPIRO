@@ -10,6 +10,7 @@
     grid-gap: 7vmin;
     justify-items: center;
     align-items: center;
+    margin-bottom: 14px;
 }
 
 .images img {
@@ -32,6 +33,16 @@ img:hover {
 .images {
     width: 100%;
 }
+.desc{
+    margin: 50px 200px;
+}
+h2, h3{
+    color: white;
+    text-align: center;
+}
+p{
+    color: white;
+}
 @media only screen and (max-width: 600px) {
     img:hover {
         transform: scale(5);
@@ -42,5 +53,11 @@ img:hover {
     .wrapper{
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 5vmin;
+    }
+    .desc{
+        margin: 50px 25px;
+    }
+    p{
+        font-size: 0.7rem;
     }
 }
