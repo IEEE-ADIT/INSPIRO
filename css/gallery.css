@@ -23,41 +23,42 @@
     transform: scale(1);
     transition: all 0.25s;
 }
-img:nth-child(7n + 1) {
+.images img:nth-child(7n + 1) {
     grid-column: 2 / span 2;
 }
-img:hover {
+.images img:hover {
     z-index: 2;
     transform: scale(2);
 }
 .images {
     width: 100%;
 }
-.desc{
+.desc {
     margin: 50px 200px;
 }
-h2, h3{
+h2,
+h3 {
     color: white;
     text-align: center;
 }
-p{
+p {
     color: white;
 }
 @media only screen and (max-width: 600px) {
-    img:hover {
+    .images img:hover {
         transform: scale(5);
     }
-    .gap{
+    .gap {
         display: none;
     }
-    .wrapper{
+    .wrapper {
         grid-template-rows: repeat(4, 1fr);
         grid-gap: 5vmin;
     }
-    .desc{
+    .desc {
         margin: 50px 25px;
     }
-    p{
+    p {
         font-size: 0.7rem;
     }
 }
