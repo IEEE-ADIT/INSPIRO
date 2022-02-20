@@ -244,6 +244,19 @@ p {
 #myDIV2{
     display: none;
 }
+.desc{
+    margin: 50px 200px;
+}
+h4{
+    color: white;
+}
+h2, h3{
+    color: white;
+    text-align: center;
+}
+p{
+    color: white;
+}
 
 @media only screen and (max-width: 600px) {
     .timeline-title{
@@ -251,5 +264,11 @@ p {
     }
     .time{
         font-size: 0.7em;
+    }
+    .desc{
+        margin: 50px 25px;
+    }
+    p{
+        font-size: 0.7rem;
     }
 }
