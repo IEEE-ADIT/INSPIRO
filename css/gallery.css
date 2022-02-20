@@ -36,4 +36,11 @@ img:hover {
     img:hover {
         transform: scale(5);
     }
+    .gap{
+        display: none;
+    }
+    .wrapper{
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 5vmin;
+    }
 }
